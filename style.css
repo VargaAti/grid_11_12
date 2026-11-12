@@ -1,0 +1,40 @@
+body {
+    background-color: blanchedalmond;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer';
+}
+
+header {
+    background-color: aquamarine;
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media (max-width: 600px)
+{
+    .grid-layout {
+        grid-template-areas:
+        'header'
+        'aside'
+        'main'
+        'footer';
+    }
+}
