@@ -30,6 +30,10 @@ header {
     grid-area: header;
     padding: 30px;
     background-color: #203558;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 main {
@@ -115,4 +119,10 @@ a {
         'main'
         'footer';
     }
+}
+
+img {
+    width: 150px;
+    height: auto;
+    filter: brightness(0) invert(1);
 }
